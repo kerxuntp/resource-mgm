@@ -1,4 +1,4 @@
-const { Resource } = require('../models/resource');
+const { Resource } = require('../models/Resource');
 const fs = require('fs').promises;
 
 async function readJSON(filename) {
