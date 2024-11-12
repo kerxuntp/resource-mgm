@@ -31,7 +31,7 @@ async function addResource(req, res) {
         const owner = req.body.owner;
 
         if (!owner.includes('@') || !owner.includes('.') || description.length < 6) {
-            return res.status(500).json({ message: 'Validation error' });
+            return res.status(500).json({ message: 'Validation error!' });
         } else {
             const newResource = new Resource(name, location, description, owner);
             const updatedResources = await writeJSON(newResource, 'utils/resources.json');
