@@ -1,4 +1,5 @@
 name: Automatic Testing for Resource Management Web App
+
 on:
   push:
     branches:
