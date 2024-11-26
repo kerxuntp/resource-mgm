@@ -1,9 +1,0 @@
-services:
-  build-rms:
-    build:
-      context: .
-      dockerfile: Dockerfile 
-    image: weilxn/rms-docker-img:latest
-    container_name: rms-docker-container
-    ports:
-      - "8000:5050" 
